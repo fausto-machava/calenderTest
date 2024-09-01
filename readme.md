@@ -1,12 +1,6 @@
-# Calendar File Text
+# Calendar
 
 ## Description
-
-Welcome to this short program!
-
-In June 2023, when I applied for a job offer, I was challenged to create a web page that generates a calendar for a specific month. The user should be able to mark specific days on the calendar and save the selections. The marked days should be stored in a text file, and upon reloading the page, the calendar should be populated with the previously marked information.
-
-To meet the requirement of the job offer, I decided to use HTML5, CSS3, pure JavaScript, and PHP without any additional libraries. The web page should be ready for deployment without any additional configuration or compilation.
 
 Based on the task provided, I have developed the following small program.
 
