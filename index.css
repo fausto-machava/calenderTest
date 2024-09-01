@@ -1,0 +1,177 @@
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: #00BD9D;
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+tbody td:hover {
+    cursor: pointer;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #00BD9D;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #54DEFD;
+    transition: background-color 0.6s;
+}
+
+i{
+    font-size: 20px;
+}
+
+.activeDate{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.marked {
+    background-color: #4F359B;
+    border-radius: 100%;
+    color: white;
+}
+
+.dayNumber{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+    color: #00BD9D;
+}
+
+.title i{
+    font-size: 24px;
+}
+
+.title p {
+    font-size: medium;
+    color: #00BD9D;
+}
+
+.message{
+    border: 1px solid #5FAD56;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success{
+    background-color: #5FAD56;
+}
+.failed{
+    background-color: #DE1A1A;
+}
+
+.alert {
+    padding: 15px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-20px);
+}
+
+.progress-container {
+    width: 100%;
+    background-color: transparent;
+    height: 5px;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #F1E3D3; /* Yellow */
+    width: 0;
+    transition: width 3s linear; /* Fill the bar in 3 seconds */
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    th,
+    td {
+        padding: 10px 20px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    th,
+    td {
+        padding: 20px 40px;
+    }
+
+
+}
